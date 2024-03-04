@@ -2,7 +2,7 @@ function login() {
     const enteredPassword = document.getElementById('password').value;
 
     // Simulate checking entered password against stored data
-    fetch('password.json')
+    fetch('json-file/users.json')
         .then(response => response.json())
         .then(data => {
             const storedPassword = data.password;

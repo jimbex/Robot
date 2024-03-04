@@ -1,42 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-body {text-align: center;
-      background-image: url('bg8.jpg');
-      color: white;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Identifying Robot</title>
+      <link rel="stylesheet" href="css-file/find.css">
 
-
-
-</style>
 </head>
 <body>
+    <div id="search-container">
+        <h2>Object Identifying Robot</h2>
+        <div>
+            <input type="text" id="object-query" placeholder="Enter object name" />
+            <button type="button" onclick="searchObject()">Search</button>
+        </div>
+    </div>
 
-<h1>Welcome</h1>
-<h2>Enter the object you want to look for</h2>
-<form action="/action_page.php">
-  <label for="object">Object:</label>
-  <input type="object" id="obj" name="object" ><br><br>
-  <input type="button" value="submit" onclick=" checkObject()" >
-</form>
-
-<script>
-    const fruits = ["banana", "orange", "apple", "mango"];
-    function checkObject(){
-        var obj = document.getElementById("obj").value;
-
-        if(fruits.includes(obj)){
-            window.location.href="main.html";
-        }
-        else{
-            alert("Cant find the object");
-            return false;
-        }
-    }
-</script>
-
-
+    <script type="text/javascript" src="js-file/find.js">
+    </script>
 </body>
-
 </html>

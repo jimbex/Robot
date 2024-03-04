@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Car Monitoring</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="video-column">
+            <video id="video" autoplay playsinline></video>
+        </div>
+
+        <div class="data-column">
+            <div class="data-container">
+                <h2>AI Car Data</h2>
+                <p>Speed: <span id="speed">0</span> km/h</p>
+                <p>Distance: <span id="distance">0</span> meters</p>
+                <p>Status: <span id="status">Unknown</span></p>
+                <p>Location: <span id="location">Fetching...</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
